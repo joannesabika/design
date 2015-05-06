@@ -1,6 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="201" y="97">
-    <field name="MODE">WHILE</field>
+  <block type="controls_repeat" id="18" inline="true" x="43" y="118">
+    <value name="TIMES">
+      <block type="math_number" id="25">
+        <field name="NUM">6</field>
+      </block>
+    </value>
     <statement name="DO">
       <block type="movement_forward" id="2">
         <next>
@@ -28,9 +32,6 @@
                                 <field name="NUM">200</field>
                               </block>
                             </value>
-                            <next>
-                              <block type="movement_stop" id="11"></block>
-                            </next>
                           </block>
                         </next>
                       </block>
@@ -43,5 +44,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="11"></block>
+    </next>
   </block>
 </xml>
